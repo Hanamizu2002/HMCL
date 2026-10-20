@@ -43,7 +43,7 @@ public final class RegionUtils {
         Schedulers.io().execute(RegionUtils::isIsChinaMainlandNetwork);
     }
 
-    private static final boolean IS_CHINA_MAINLAND_MACHINE = checkMachineIsChinaMainland();
+    private static final boolean IS_CHINA_MAINLAND_MACHINE = false;
 
     private static boolean checkMachineIsChinaMainland() {
         if ("Asia/Shanghai".equals(ZoneId.systemDefault().getId()))
